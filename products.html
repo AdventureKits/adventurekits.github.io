@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Products | AdventureKits+</title>
+    <link href="css/normailze.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <ul>
+    <li><a href="index.html"> //HOME//</a></li>
+    <li><a href="about.html"> //ABOUT//</a></li>
+    <li><a href="#"> //PRODUCTS//</a></li>
+    <li><a href="donate.html"> //DONATE//</a></li>
+  </ul>
+  <h1>Uh oh! it looks like we are working on this webpage right now! Here is a list of our kits:</h1>
+  <ul>
+    <li>Kit 1 | Summer Pack:
+bug spray, bug repellent rub-on towels, homemade wasp/hornet/yellow jacket traps, homemade wasp/hornet/yellow jacket spray, ortho home defense, and bear spray | $x</li>
+    <li>Kit 2 | First Aid Pack:
+    Uh oh! It looks like we are working on this product list! | $xx</li>
+    <li></li>
+  </ul>
+  <h3>Please note that these product lists are subject to change as we are currently editing the list. You can buy these packs in sizes XS, S, M, L, and XL.</h3>
+  <div id="paypal-button-container"></div>
+<script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
+<script>
+  paypal.Buttons({
+      style: {
+          shape: 'pill',
+          color: 'gold',
+          layout: 'vertical',
+          label: 'paypal',
+
+      },
+      createOrder: function(data, actions) {
+          return actions.order.create({
+              purchase_units: [{
+                  amount: {
+                      value: '1'
+                  }
+              }]
+          });
+      },
+      onApprove: function(data, actions) {
+          return actions.order.capture().then(function(details) {
+              alert('Transaction completed by ' + details.payer.name.given_name + '!');
+          });
+      }
+  }).render('#paypal-button-container');
+</script>
+    <div class="footnotes">
+      <img class="githubIcon" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.afterdawn.fi%2Fv3%2Fnews%2Foriginal%2Fgithub-logo.png&f=1&nofb=1" alt="Your Image Could Not Load. It Was A Picture Of Github's logo.">
+      <p>Copyright 2020 Eamon Wall. All Rights Reserved.</p>
+    </div>
+  </body>
+</html>

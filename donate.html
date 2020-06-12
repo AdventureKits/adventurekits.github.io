@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Donate | adventureKits+</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/normailze.css" rel="stylesheet">
+  </head>
+  <body>
+    <ul>
+      <li><a href="index.html"> //HOME//</a></li>
+      <li><a href="about.html"> //ABOUT//</a></li>
+      <li><a href="products.html"> //PRODUCTS//</a></li>
+      <li><a href="#"> //DONATE//</a></li>
+    </ul>
+    <h1>Hey there!</h1>
+      <h3>It looks like you want to donate to us! Currently, we are still setting up Paypal :(. Check back soon</h3>
+      <p>The following button is a placeholder.</p>
+      <div id="paypal-button-container"></div>
+    <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
+    <script>
+      paypal.Buttons({
+          style: {
+              shape: 'pill',
+              color: 'gold',
+              layout: 'vertical',
+              label: 'paypal',
+
+          },
+          createOrder: function(data, actions) {
+              return actions.order.create({
+                  purchase_units: [{
+                      amount: {
+                          value: '1'
+                      }
+                  }]
+              });
+          },
+          onApprove: function(data, actions) {
+              return actions.order.capture().then(function(details) {
+                  alert('Transaction completed by ' + details.payer.name.given_name + '!');
+              });
+          }
+      }).render('#paypal-button-container');
+    </script>
+  </body>
+</html>
