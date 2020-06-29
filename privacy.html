@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Privacy Policy | AdventureKits+</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/normailze.css" rel="stylesheet">
+  <style>
+  html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: left;
+    background-color: white;
+    padding: 50px;
+  }
+
+  ::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
+
+  ::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
+
+  /*
+   * A better looking default horizontal rule
+   */
+
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+  }
+
+  /*
+   * Remove the gap between audio, canvas, iframes,
+   * images, videos and the bottom of their containers:
+   * https://github.com/h5bp/html5-boilerplate/issues/440
+   */
+
+  audio,
+  canvas,
+  iframe,
+  img,
+  svg,
+  video {
+    vertical-align: middle;
+  }
+
+  /*
+   * Remove default fieldset styles.
+   */
+
+  fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  /*
+   * Allow only vertical resizing of textareas.
+   */
+
+  textarea {
+    resize: vertical;
+  }
+
+
+  /* ==========================================================================
+     Author's custom styles
+     ========================================================================== */
+
+  /* ==========================================================================
+     Helper classes
+     ========================================================================== */
+
+  /*
+   * Hide visually and from screen readers
+   */
+
+  .hidden {
+    display: none !important;
+  }
+
+  /*
+  * Hide only visually, but have it available for screen readers:
+  * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+  *
+  * 1. For long content, line feeds are not interpreted as spaces and small width
+  *    causes content to wrap 1 word per line:
+  *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+  */
+
+  .sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    /* 1 */
+  }
+
+  /*
+  * Extends the .sr-only class to allow the element
+  * to be focusable when navigated to via the keyboard:
+  * https://www.drupal.org/node/897638
+  */
+
+  .sr-only.focusable:active,
+  .sr-only.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: inherit;
+    width: auto;
+  }
+
+  /*
+  * Hide visually and from screen readers, but maintain layout
+  */
+
+  .invisible {
+    visibility: hidden;
+  }
+
+  /*
+  * Clearfix: contain floats
+  *
+  * For modern browsers
+  * 1. The space content is one way to avoid an Opera bug when the
+  *    `contenteditable` attribute is included anywhere else in the document.
+  *    Otherwise it causes space to appear at the top and bottom of elements
+  *    that receive the `clearfix` class.
+  * 2. The use of `table` rather than `block` is only necessary if using
+  *    `:before` to contain the top-margins of child elements.
+  */
+
+  .clearfix:before,
+  .clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+  }
+
+  .clearfix:after {
+    clear: both;
+  }
+
+  /* ==========================================================================
+     EXAMPLE Media Queries for Responsive Design.
+     These examples override the primary ('mobile first') styles.
+     Modify as content requires.
+     ========================================================================== */
+
+  @media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+  }
+
+  @media print,
+    (-webkit-min-device-pixel-ratio: 1.25),
+    (min-resolution: 1.25dppx),
+    (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+  }
+
+  /* ==========================================================================
+     Print styles.
+     Inlined to avoid the additional HTTP request:
+     https://www.phpied.com/delay-loading-your-print-css/
+     ========================================================================== */
+
+  @media print {
+    *,
+    *:before,
+    *:after {
+      background: transparent !important;
+      color: #000 !important;
+      /* Black prints faster */
+      box-shadow: none !important;
+      text-shadow: none !important;
+    }
+    a,
+    a:visited {
+      text-decoration: underline;
+    }
+    a[href]:after {
+      content: " (" attr(href) ")";
+    }
+    abbr[title]:after {
+      content: " (" attr(title) ")";
+    }
+    /*
+       * Don't show links that are fragment identifiers,
+       * or use the `javascript:` pseudo protocol
+       */
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+      content: "";
+    }
+    pre {
+      white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+      border: 1px solid #999;
+      page-break-inside: avoid;
+    }
+    /*
+       * Printing Tables:
+       * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+       */
+    thead {
+      display: table-header-group;
+    }
+    tr,
+    img {
+      page-break-inside: avoid;
+    }
+    p,
+    h2,
+    h3 {
+      orphans: 3;
+      widows: 3;
+    }
+    h2,
+    h3 {
+      page-break-after: avoid;
+    }
+  }
+
+  /*Menu code*/
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-stretch: expanded;
+  }
+
+  li {
+    float: left;
+    padding: 5px 5px;
+  }
+
+  li a {
+    color: #990033;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: padding 2s;
+    font-style: italic;
+  }
+
+  li a:hover {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    padding: 14px 24px;
+  }
+
+  /*
+  Centers the text and images to the center
+  */
+
+  img {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  h1 h2 {
+    text-align: center !important;
+  }
+
+  /*
+  About button styles. Should not be called that
+  */
+
+  .aboutButton {
+    background-color: #00b3b3;
+  	border-radius:42px;
+  	display:inline-block;
+  	cursor:pointer;
+  	color: black;
+  	font-family:Arial;
+  	font-size:17px;
+      padding: 15px;
+  	text-decoration:none;
+      transition: width 0.5s, height 0.5s, font 0.55s, background-color 1s ease-out, margin 0.35s;
+    width: 150px !important;
+    height: 25px;
+    margin: 10px 270px;
+    transition-delay: 1s;
+  }
+  .aboutButton:hover {
+    width: 175px !important;
+    height: 35px;
+    font-size: 22px;
+    background-color: #00cc7a;
+    margin: 3px 260px;
+    transition-delay: 0.2s;
+  }
+  .aboutButton:active {
+  	position:relative;
+  	top:1px;
+  }
+
+  .githubIcon {
+    width: 25px;
+    height: 25px;
+    margin: 45px;
+    align: left;
+  }
+
+  /*
+  Adds a footer
+  */
+
+  .footnotes {
+    padding: 40px;
+    background-color: lightgrey;
+    color: grey;
+    font-size: 10px;
+    margin: 0px !important;
+  }
+
+  .biggerText {
+    font-size: 26px;
+    color: #3399ff;
+  }
+
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li><a href="index.html"> //HOME//</a></li>
+    <li><a href="about.html"> //ABOUT</a></li>
+    <li><a href="products.html"> //PRODUCTS//</a></li>
+    <li><a href="donate.html"> //DONATE//</a></li>
+  </ul>
+  <h1>Privacy Policy</h1>
+  <h6><em>Last updated June 28th</em></h6>
+  <p>Hey there. Welcome to AdventureKits+'s privacy policy.</p>
+  <br>
+  <p class="biggerText"> Here at AdventureKits+, <br> we stride to protect <br> your personal information. <br> We take personal <br> information seriusly.</p>
+
+  <p class="biggerText"> One way we do this is by <br> <strong>not storing cookies on <br> device.</strong> </p>
+  <p class="biggerText"> <strong>What are cookies?</strong> <br> Cookies are basicaly tracking <br> devices. Other sites can <br> see them and track <br> what you do, no matter <br> what.</p>
+  <p class="biggerText"> We do not sell your <br> personal information and <br> when we store information, <br> we only store your shipping <br> address, amount of money <br> spent with us, name, <br> and email. <strong>These are <br> only used for customer service <br> and to improve our service. <br> We can delete it anytime <br> you want.</strong> Nothing <br> personal will ever <br> be used to identify <br> you other then when <br> you contact support.</p>
+  <br>
+  <h1>About the information</h1>
+    <h2>What information we collect</h2>
+      <p>We collect order information from Square, such as shipping address, name, email, and price paid.</p>
+    <h2>Why we collect it</h2>
+      <p>This information from Square helps us fufil your order. We also keep a log of your name, email, address, and money spent on sales with you to help our customer support help you with anything and to improve the company.</p>
+    <h2>Where we put the information</h2>
+      <p>We store it in a Google Sheet spreadsheet. For info on their privacy policy visit <a href="https://policies.google.com/privacy?hl=en-US">their website</a></p>
+    <h2>Who can view that information</h2>
+      <p>Customer service officials and Eamon Wall, CFO of AdventureKits+. All the information stored inside of the document is confidential and no one will share your information with anyone else.</p>
+    <p class="biggerText">You will not recieve <br> promotionial <br> emails, or any emails, <br> for that matter, <br> from us unless you <br> give consent. <br> <br> Let me repeat that again. <br> We may have your email <br> on file, but we will <br> not ever send you <br> promotional emails unless <br> you give us permission.</p>
+</body>
+
+</html>
