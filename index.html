@@ -3,24 +3,22 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Home | AdventureKits+</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="main.css">
-
-  <meta name="theme-color" content="#fafafa">
-<style>
-html {
+  <title>Home | AdventureKits+ | We Sell Adventure Kits</title>
+  <style>
+@font-face {
+  font-family: Bespoke;
+  src: url(../font/Bespoke_normal.otf);
+}
+@font-face {
+  font-family: Bespoke;
+  src: url(../font/Bespoke_bold.otf);
+  font-weight: bold;
+}
+  html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Bespoke !important;
   text-align: center;
   background-color: white;
   padding: 50px;
@@ -267,13 +265,15 @@ li {
 }
 
 li a {
-  color: #990033;
+  color: #9a4545 !important;
   display: block;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   transition: padding 2s;
   font-style: italic;
+  font-weight: normal !important;
+  opacity: 70%;
 }
 
 li a:hover {
@@ -311,17 +311,17 @@ About button styles. Should not be called that
     padding: 15px;
 	text-decoration:none;
     transition: width 0.5s, height 0.5s, font 0.55s, background-color 1s ease-out, margin 0.35s;
-  width: 150px !important;
+  width: 170px !important;
   height: 25px;
-  margin: 10px 270px;
+  margin: 10px auto;
   transition-delay: 1s;
 }
 .aboutButton:hover {
   width: 205px !important;
-  height: 45px;
-  font-size: 22px;
+  height: 30px;
+  font-size: 20px;
   background-color: #00cc7a;
-  margin: 3px 260px;
+  margin: 3px auto;
   transition-delay: 0.2s;
 }
 .aboutButton:active {
@@ -365,16 +365,32 @@ form {
     margin: 45px;
     float: left;
   }
-</style>
-</head>
+
+
+a:link {
+	color: #333333;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.thePageOn {
+	color: #9a4545;
+	opacity: 100%;
+	font-weight: bold !important;
+}
+
+  </style>
+  </head>
 
 <body>
   <!-- Edit the front page here -->
-  <ul>
-    <li><a href="#"> //HOME//</a></li>
-    <li><a href="about.html"> //ABOUT US//</a></li>
-    <li><a href="products.html"> //PRODUCTS//</a></li>
-    <li><a href="donate.html"> //DONATE//</a></li>
+  <h3>For the best experience, please download <a href="BespokeFont.zip">these fonts</a></h3>
+<ul>
+    <li><a  class="thePageOn" href="https://adventurekits.github.io/adventurekits.github.io/"> //HOME//</a></li>
+    <li><a href="https://adventurekits.github.io/adventurekits.github.io/about.html"> //ABOUT//</a></li>
+    <li><a href="https://adventurekits.github.io/adventurekits.github.io/products.html"> //PRODUCTS//</a></li>
+    <li><a href="https://adventurekits.github.io/adventurekits.github.io/donate.html"> //DONATE//</a></li>
+			<li><a href="https://adventurekits.github.io/adventurekits.github.io/privacy"> //PRIVACY//</a></li>
   </ul>
     <h1>AdventureKits+: We Sell Adventure Kits</h1>
     <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.nkU3ynyx14eT69ZeeGE13AHaE8%26pid%3DApi&f=1" alt="Your Image Could Not Load. The image was of Bug Spray."/>
@@ -387,26 +403,11 @@ form {
   <p>Kit 1: Summer Kit</p>
   <p>Kit 2: First-Aid Kit</p>
   <div class="footnotes">
-  <p><a href="https://www.github.com/adventurekits/adventurekits.github.io"><img title="GitHub Code" class="githubIcon" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.afterdawn.fi%2Fv3%2Fnews%2Foriginal%2Fgithub-logo.png&f=1&nofb=1" alt="Your Image Could Not Load. It Was A Picture Of Github's logo."></a>      <a href="https://www.discord.gg/eKe9e2y"><img src="Discord-Logo-Black.png" alt="Discord Invite Link" title="Our Discord" id="discord-logo"><a></p>
+  <p><a href="https://www.github.com/adventurekits/adventurekits.github.io"><img title="GitHub Code" class="githubIcon" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.afterdawn.fi%2Fv3%2Fnews%2Foriginal%2Fgithub-logo.png&f=1&nofb=1" alt="Your Image Could Not Load. It Was A Picture Of Github's logo."></a>      <a href="https://www.discord.gg/eKe9e2y"><img src="img/Discord-Logo-Black.png" alt="Discord Invite Link" title="Our Discord" id="discord-logo"><a></p>
+  <p><a href="https://adventurekits.github.io/adventurekits.github.io/privacy">Privacy Policy</a></p>
+  <p>&copy; Eamon Wall 2020. All rights reserved.</p>
 
 </div>
 
-  <!--Other Stuff-->
-  <script src="js/vendor/modernizr-3.8.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169259926-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-169259926-1');
-  </script>
-
-</body>
-
-</html>
+    </body>
+  </html>
