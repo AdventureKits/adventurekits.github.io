@@ -1,413 +1,157 @@
 <!doctype html>
-<html class="no-js" lang="en-us">
+<html class="no-js" lang="">
 
 <head>
   <meta charset="utf-8">
-  <title>Home | AdventureKits+ | We Sell Adventure Kits</title>
+  <title>Home | productReviewerMaster</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
   <style>
-@font-face {
-  font-family: Roboto;
-  src: url(Roboto-normal.ttf);
-}
-@font-face {
-  font-family: Roboto;
-  src: url(Roboto-bold.ttf);
-  font-weight: bold;
-}
   html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
-  font-family: Roboto !important;
-  text-align: center;
-  background-color: white;
-  padding: 50px;
-}
-
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-  resize: vertical;
-}
-
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden {
-  display: none !important;
-}
-
-/*
-* Hide only visually, but have it available for screen readers:
-* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
-*
-* 1. For long content, line feeds are not interpreted as spaces and small width
-*    causes content to wrap 1 word per line:
-*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
-*/
-
-.sr-only {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
-}
-
-/*
-* Extends the .sr-only class to allow the element
-* to be focusable when navigated to via the keyboard:
-* https://www.drupal.org/node/897638
-*/
-
-.sr-only.focusable:active,
-.sr-only.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
-}
-
-/*
-* Hide visually and from screen readers, but maintain layout
-*/
-
-.invisible {
-  visibility: hidden;
-}
-
-/*
-* Clearfix: contain floats
-*
-* For modern browsers
-* 1. The space content is one way to avoid an Opera bug when the
-*    `contenteditable` attribute is included anywhere else in the document.
-*    Otherwise it causes space to appear at the top and bottom of elements
-*    that receive the `clearfix` class.
-* 2. The use of `table` rather than `block` is only necessary if using
-*    `:before` to contain the top-margins of child elements.
-*/
-
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */
-}
-
-.clearfix:after {
-  clear: both;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-
-@media print {
-  *,
-  *:before,
-  *:after {
-    background: transparent !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: monospace;
+    text-align: center;
+    color: White;
+    background-color: #1a1a1a !important;
   }
-  a,
-  a:visited {
-    text-decoration: underline;
+  ::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
   }
-  a[href]:after {
-    content: " (" attr(href) ")";
+
+  ::selection {
+    background: #b3d4fc;
+    text-shadow: none;
   }
-  abbr[title]:after {
-    content: " (" attr(title) ")";
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-stretch: expanded;
   }
-  /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
-  a[href^="#"]:after,
-  a[href^="javascript:"]:after {
-    content: "";
-  }
-  pre {
-    white-space: pre-wrap !important;
-  }
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-  /*
-     * Printing Tables:
-     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
-  thead {
-    display: table-header-group;
-  }
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
-}
 
-/*Menu code*/
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  font-stretch: expanded;
-}
-
-li {
-  float: left;
-  padding: 5px 5px;
-}
-
-li a {
-  color: #9a4545 !important;
-  display: block;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  transition: padding 2s;
-  font-style: italic;
-  font-weight: normal !important;
-  opacity: 70%;
-}
-
-li a:hover {
-  background-color: #e0e0e0;
-  border-radius: 10px;
-  padding: 14px 24px;
-}
-
-/*
-Centers the text and images to the center
-*/
-
-img {
-  margin-left: 100px;
-  margin-right: 100px;
-}
-
-p h1 {
-  margin-left: 100px;
-  margin-right: 100px;
-}
-
-/*
-About button styles. Should not be called that
-*/
-
-.aboutButton {
-  background-color: #00b3b3;
-	border-radius:42px;
-	display:inline-block;
-	cursor:pointer;
-	color: black;
-	font-family:Arial;
-	font-size:17px;
-    padding: 15px;
-	text-decoration:none;
-    transition: width 0.5s, height 0.5s, font 0.55s, background-color 1s ease-out, margin 0.35s;
-  width: 170px !important;
-  height: 25px;
-  margin: 10px auto;
-  transition-delay: 1s;
-}
-.aboutButton:hover {
-  width: 205px !important;
-  height: 30px;
-  font-size: 20px;
-  background-color: #00cc7a;
-  margin: 3px auto;
-  transition-delay: 0.2s;
-}
-.aboutButton:active {
-	position:relative;
-	top:1px;
-}
-
-.githubIcon {
-  width: 25px;
-  height: 25px;
-  margin: 45px;
-  align: left;
-}
-
-/*
-Adds a footer
-*/
-
-.footnotes {
-  padding: 40px;
-  background-color: lightgrey;
-  color: grey;
-  font-size: 10px;
-  margin: 0px !important;
-}
-
-form {
-  align: left !important;
-  margin: 35px !important;
-}
-
-#coffeeGif {
-  width: 396px;
-  height: 264px;
-  margin: 30px;
-}
-
-  #discord-logo {
-    height: 25px;
-    width: 25px;
-    margin: 45px;
+  li {
     float: left;
+    padding: 5px 5px;
   }
 
+  li a {
+    color: white;
+    opacity: 70%;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
 
-a:link {
-	color: #333333;
-	font-weight: bold;
-	text-decoration: none;
-}
+  li a:hover {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+  }
 
-.thePageOn {
-	color: #9a4545;
-	opacity: 100%;
-	font-weight: bold !important;
-}
+  img {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
 
+  p h1 {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .aboutButton {
+    background-color: #00b3b3;
+  	border-radius:42px;
+  	display:inline-block;
+  	cursor:pointer;
+  	color: black;
+  	font-family:Arial;
+  	font-size:17px;
+      padding: 15px;
+  	text-decoration:none;
+      transition: width 0.5s, height 0.5s, font 0.55s, background-color 1s ease-out, margin 0.35s;
+    width: 120px;
+    height: 25px;
+    border: solid 2px black;
+    margin: 10px 270px;
+  }
+  .aboutButton:hover {
+    width: 150px;
+    height: 35px;
+    font-size: 22px;
+    background-color: #00cc7a;
+    margin: 3px 260px;
+  }
+  .aboutButton:active {
+  	position:relative;
+  	top:1px;
+  }
+
+  .githubIcon {
+    width: 25px;
+    height: 25px;
+    margin: 45px;
+    align: left;
+  }
+
+  .footnotes {
+    padding: 30px;
+    font-size: 10px;
+    background-color: #1a1a1a !important;
+  }
+
+  iframe {
+    margin: 35px;
+  }
+
+  .camera {
+    width: 750px;
+    height: 550px;
+  }
   </style>
-  </head>
+</head>
 
 <body>
   <!-- Edit the front page here -->
-  <h3>For the best experience, please download <a href="BespokeFont.zip">these fonts</a></h3>
-<ul>
-    <li><a  class="thePageOn" href="https://adventurekits.github.io/adventurekits.github.io/"> //HOME//</a></li>
-    <li><a href="https://adventurekits.github.io/adventurekits.github.io/about.html"> //ABOUT//</a></li>
-    <li><a href="https://adventurekits.github.io/adventurekits.github.io/products.html"> //PRODUCTS//</a></li>
-    <li><a href="https://adventurekits.github.io/adventurekits.github.io/donate.html"> //DONATE//</a></li>
-			<li><a href="https://adventurekits.github.io/adventurekits.github.io/privacy"> //PRIVACY//</a></li>
+  <ul>
+    <li><a href="#"> HOME</a></li>
+    <li><a href="#"> ABOUT</a></li>
+    <li><a href="#"> REVIEWS</a></li>
   </ul>
-    <h1>AdventureKits+: We Sell Adventure Kits</h1>
-    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.nkU3ynyx14eT69ZeeGE13AHaE8%26pid%3DApi&f=1" alt="Your Image Could Not Load. The image was of Bug Spray."/>
-    <p>Powered by you.</p>
-    <p><a href="products.html" class="aboutButton">OUR PRODUCTS</a></p>
-    <br>
-    <h1>Adventure 4 Life</h1>
-    <img id="coffeeGif" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.pexels.com%2Fphotos%2F442559%2Fpexels-photo-442559.jpeg&f=1&nofb=1" alt="Your image Could Not Load. It was a man in the jungle exploring.">
-  <h1>Shop The Kits</h1>
-  <p>Kit 1: Summer Kit</p>
-  <p>Kit 2: First-Aid Kit</p>
+  <h1>productReviewerMaster: The only review site you will ever need</h1>
+  <img src="cameraonbooks.webp" alt="cameras on books" title="Camera" class="camera">
+  <p>Powered by github.</p>
+  <p><a href="reviews.html" class="aboutButton">REVIEWS</a></p>
+  <br>
+  <h1>Hey there! We are still developing this site right now. Check back soon for updates!</h1>
   <div class="footnotes">
-  <p><a href="https://www.github.com/adventurekits/adventurekits.github.io"><img title="GitHub Code" class="githubIcon" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.afterdawn.fi%2Fv3%2Fnews%2Foriginal%2Fgithub-logo.png&f=1&nofb=1" alt="Your Image Could Not Load. It Was A Picture Of Github's logo."></a>      <a href="https://www.discord.gg/eKe9e2y"><img src="img/Discord-Logo-Black.png" alt="Discord Invite Link" title="Our Discord" id="discord-logo"><a></p>
-  <p><a href="https://adventurekits.github.io/adventurekits.github.io/privacy">Privacy Policy</a></p>
-  <p>&copy; Eamon Wall 2020. All rights reserved.</p>
-
+  <p><a href="https://www.github.com/wall03/wall03.github.io" title="Github Link"><img class="githubIcon" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn4.iconfinder.com%2Fdata%2Ficons%2Ficonsimple-logotypes%2F512%2Fgithub-512.png&f=1&nofb=1" alt="Github Link"></a></p>
 </div>
 
-    </body>
-  </html>
+  <!--Other Stuff-->
+  <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
